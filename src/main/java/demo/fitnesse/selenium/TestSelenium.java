@@ -1,11 +1,9 @@
 package demo.fitnesse.selenium;
 
-import java.io.File;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -16,9 +14,9 @@ public class TestSelenium  {
         // not the implementation.
 //        WebDriver driver = new FirefoxDriver();
         
-        File file = new File("D:/Soft/selenium-IE-Driver/IEDriverServer_x64_2.53.0/IEDriverServer.exe");
-	    System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
-	    WebDriver driver = new InternetExplorerDriver();
+//        File file = new File("D:/Soft/selenium-IE-Driver/IEDriverServer_x64_2.53.0/IEDriverServer.exe");
+//	    System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
+	    WebDriver driver = new FirefoxDriver();
 
         // And now use this to visit Google
         driver.get("http://www.google.com");

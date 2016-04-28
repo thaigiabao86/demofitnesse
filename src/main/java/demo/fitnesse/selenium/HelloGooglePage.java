@@ -5,6 +5,7 @@ import java.io.File;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class HelloGooglePage {
@@ -20,9 +21,9 @@ public class HelloGooglePage {
 	    this.setElementName(elementName);
 	    this.setKey(key);
 	    						
-	    File file = new File("D:/Soft/selenium-IE-Driver/IEDriverServer_Win32_2.53.0/IEDriverServer.exe");
-	    System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
-	    driver = new InternetExplorerDriver();
+//	    File file = new File("D:/Soft/selenium-IE-Driver/IEDriverServer_Win32_2.53.0/IEDriverServer.exe");
+//	    System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
+	    driver = new FirefoxDriver();
 	}
 
 	public void open(String URL) {
