@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>HelloGooglePage</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <date>2016-04-26T14:09:42+07:00</date>
+    <runTimeInMillis>2917</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitlibrary/20080812/fitlibrary-20080812.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitnesse/20151230.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/junit/junit/4.12/junit-4.12.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.53.0/selenium-ie-driver-2.53.0.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:/Soft/selenium-2.53.0/selenium-java-2.53.0.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:/Soft/selenium-2.53.0/selenium-server-standalone-2.53.0.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: target/classes&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;demo.fitnesse.selenium&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: BrowserType1=*iexplore&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;HelloGooglePage&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;http://www.google.com&lt;/td&gt;
+		&lt;td&gt;q&lt;/td&gt;
+		&lt;td&gt;cheese&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;open&lt;/td&gt;
+		&lt;td colspan="4"&gt;www.google.com&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;findElement&lt;/td&gt;
+		&lt;td colspan="4" class="error"&gt;q&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="5"&gt;&lt;pre&gt;__EXCEPTION__:org.openqa.selenium.NoSuchElementException: Unable to find element with name == q (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 312 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'Cosa208', ip: '192.168.1.42', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, proxy={proxyType=}, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:16669/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55716dd1-3059-4e24-8ea0-bfb6fb13a685
+*** Element info: {Using=name, value=q}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_91]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_91]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_91]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) [rt.jar:1.8.0_91]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206) [selenium-java-2.53.0.jar]
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158) [selenium-java-2.53.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678) [selenium-java-2.53.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363) [selenium-java-2.53.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461) [selenium-java-2.53.0.jar]
+	at org.openqa.selenium.By$ByName.findElement(By.java:303) [selenium-java-2.53.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) [selenium-java-2.53.0.jar]
+	at demo.fitnesse.selenium.HelloGooglePage.findElement(HelloGooglePage.java:35) [file:/C:/Users/tuyen.lq/workspace/FitDemo/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_91]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72) [fitnesse-20151230.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;sendKeys&lt;/td&gt;
+		&lt;td colspan="4" class="error"&gt;cheese&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="5"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at demo.fitnesse.selenium.HelloGooglePage.sendKeys(HelloGooglePage.java:39) [file:/C:/Users/tuyen.lq/workspace/FitDemo/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_91]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72) [fitnesse-20151230.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td colspan="5" class="error"&gt;submit&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="5"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at demo.fitnesse.selenium.HelloGooglePage.submit(HelloGooglePage.java:44) [file:/C:/Users/tuyen.lq/workspace/FitDemo/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_91]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72) [fitnesse-20151230.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>HelloGooglePage</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='demo.fitnesse.selenium'}</instruction>
+        <slimResult>pass(demo.fitnesse.selenium)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>demo.fitnesse.selenium</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='HelloGooglePage', args=[http://www.google.com, q, cheese]}</instruction>
+        <slimResult>pass(HelloGooglePage)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>HelloGooglePage</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='open', args=[www.google.com]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_1_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='call', instanceName='scriptTableActor', methodName='findElement', args=[q]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_3', instruction='call', instanceName='scriptTableActor', methodName='sendKeys', args=[cheese]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_4', instruction='call', instanceName='scriptTableActor', methodName='submit', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_4</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\tuyen.lq\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitlibrary/20080812/fitlibrary-20080812.jar;C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitnesse/20151230.jar;C:/Users/tuyen.lq/.m2/repository/junit/junit/4.12/junit-4.12.jar;C:/Users/tuyen.lq/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.53.0/selenium-ie-driver-2.53.0.jar;D:/Soft/selenium-2.53.0/selenium-java-2.53.0.jar;D:/Soft/selenium-2.53.0/selenium-server-standalone-2.53.0.jar;target/classes fitnesse.slim.SlimService 8086</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr>Slim  Map converter not loaded: could not find class org/htmlparser/NodeFilter
+Started InternetExplorerDriver server (64-bit)
+2.53.0.0
+Listening on port 16669
+Only local connections are allowed
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>3999</totalRunTimeInMillis>
+</testResults>
+

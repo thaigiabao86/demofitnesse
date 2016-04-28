@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>HelloGooglePage</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>5</exceptions>
+    </counts>
+    <date>2016-04-26T14:19:48+07:00</date>
+    <runTimeInMillis>124</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitlibrary/20080812/fitlibrary-20080812.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitnesse/20151230.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/junit/junit/4.12/junit-4.12.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.53.0/selenium-ie-driver-2.53.0.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/org/htmlparser/htmlparser/2.1/htmlparser-2.1.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: target/classes&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;demo.fitnesse.selenium&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: BrowserType1=*iexplore&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;script&lt;/td&gt;
+		&lt;td class="error"&gt;HelloGooglePage&lt;/td&gt;
+		&lt;td class="error"&gt;http://www.google.com&lt;/td&gt;
+		&lt;td class="error"&gt;q&lt;/td&gt;
+		&lt;td class="error"&gt;cheese&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="5"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.8.0_91]
+	at java.lang.Class.forName(Class.java:264) [rt.jar:1.8.0_91]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.getClass(DefaultInteraction.java:57) [fitnesse-20151230.jar]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.searchPathsForClass(DefaultInteraction.java:47) [fitnesse-20151230.jar]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.createInstance(DefaultInteraction.java:20) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:48) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) [rt.jar:1.8.0_91]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) [rt.jar:1.8.0_91]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) [rt.jar:1.8.0_91]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [rt.jar:1.8.0_91]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.8.0_91]
+	at java.lang.Class.forName(Class.java:264) [rt.jar:1.8.0_91]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.getClass(DefaultInteraction.java:57) [fitnesse-20151230.jar]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.searchPathsForClass(DefaultInteraction.java:47) [fitnesse-20151230.jar]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.createInstance(DefaultInteraction.java:20) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:48) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;open &lt;span class="error"&gt;The instance scriptTableActor.open. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;www.google.com&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;findElement &lt;span class="error"&gt;The instance scriptTableActor.findElement. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;q&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;sendKeys &lt;span class="error"&gt;The instance scriptTableActor.sendKeys. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;cheese&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td colspan="5"&gt;submit &lt;span class="error"&gt;The instance scriptTableActor.submit. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>HelloGooglePage</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='demo.fitnesse.selenium'}</instruction>
+        <slimResult>pass(demo.fitnesse.selenium)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>demo.fitnesse.selenium</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='HelloGooglePage', args=[http://www.google.com, q, cheese]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='open', args=[www.google.com]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.open. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='call', instanceName='scriptTableActor', methodName='findElement', args=[q]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.findElement. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_3', instruction='call', instanceName='scriptTableActor', methodName='sendKeys', args=[cheese]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.sendKeys. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_4', instruction='call', instanceName='scriptTableActor', methodName='submit', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_4</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.submit. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\tuyen.lq\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitlibrary/20080812/fitlibrary-20080812.jar;C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitnesse/20151230.jar;C:/Users/tuyen.lq/.m2/repository/junit/junit/4.12/junit-4.12.jar;C:/Users/tuyen.lq/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.53.0/selenium-ie-driver-2.53.0.jar;C:/Users/tuyen.lq/.m2/repository/org/htmlparser/htmlparser/2.1/htmlparser-2.1.jar;target/classes fitnesse.slim.SlimService 8085</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>787</totalRunTimeInMillis>
+</testResults>
+

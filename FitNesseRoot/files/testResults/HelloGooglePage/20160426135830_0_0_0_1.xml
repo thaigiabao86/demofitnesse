@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>HelloGooglePage</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>5</exceptions>
+    </counts>
+    <date>2016-04-26T13:58:30+07:00</date>
+    <runTimeInMillis>175</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitlibrary/20080812/fitlibrary-20080812.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitnesse/20151230.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/junit/junit/4.12/junit-4.12.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:/Users/tuyen.lq/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.53.0/selenium-ie-driver-2.53.0.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:/Soft/selenium-2.53.0/selenium-java-2.53.0.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: D:/Soft\selenium-2.53.0/selenium-server-standalone-2.53.0.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: target/classes&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.demo&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: BrowserType1=*iexplore&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;HelloGooglePage &lt;span class="error"&gt;Could not invoke constructor for HelloGooglePage[3]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;http://www.google.com&lt;/td&gt;
+		&lt;td&gt;q&lt;/td&gt;
+		&lt;td&gt;cheese&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;open &lt;span class="error"&gt;Could not invoke constructor for open[1]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;www.google.com&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;findElement &lt;span class="error"&gt;Could not invoke constructor for findElement[1]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;q&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;sendKeys &lt;span class="error"&gt;Could not invoke constructor for sendKeys[1]&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;cheese&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;submit &lt;span class="error"&gt;Could not invoke constructor for submit[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>HelloGooglePage</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='com.demo'}</instruction>
+        <slimResult>pass(com.demo)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>com.demo</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='HelloGooglePage', args=[http://www.google.com, q, cheese]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for HelloGooglePage[3]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='open', args=[www.google.com]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for open[1]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_0', instruction='make', instanceName='decisionTable_3', className='findElement', args=[q]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_3_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for findElement[1]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_0', instruction='make', instanceName='decisionTable_4', className='sendKeys', args=[cheese]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_4_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for sendKeys[1]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_0', instruction='make', instanceName='decisionTable_5', className='submit', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_5_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for submit[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\tuyen.lq\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitlibrary/20080812/fitlibrary-20080812.jar;C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitnesse/20151230.jar;C:/Users/tuyen.lq/.m2/repository/junit/junit/4.12/junit-4.12.jar;C:/Users/tuyen.lq/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.53.0/selenium-ie-driver-2.53.0.jar;D:/Soft/selenium-2.53.0/selenium-java-2.53.0.jar;D:/Soft\selenium-2.53.0/selenium-server-standalone-2.53.0.jar;target/classes fitnesse.slim.SlimService 8085</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>829</totalRunTimeInMillis>
+</testResults>
+

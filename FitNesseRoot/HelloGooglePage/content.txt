@@ -1,0 +1,25 @@
+#!define COMMAND_PATTERN {"C:\Program Files\Java\jdk1.7.0_55\bin\java" -cp %p %m}
+
+!path C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitlibrary/20080812/fitlibrary-20080812.jar
+!path C:/Users/tuyen.lq/.m2/repository/org/fitnesse/fitnesse/20151230.jar
+!path C:/Users/tuyen.lq/.m2/repository/junit/junit/4.12/junit-4.12.jar
+
+!path C:/Users/tuyen.lq/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.53.0/selenium-ie-driver-2.53.0.jar
+!path D:/Soft/selenium-2.53.0/selenium-java-2.53.0.jar
+!path D:/Soft/selenium-2.53.0/selenium-server-standalone-2.53.0.jar
+
+!path target/classes
+
+!define TEST_SYSTEM {slim}
+
+!|import | 
+|demo.fitnesse.selenium|
+
+!define BrowserType1 {*iexplore}
+
+!|script|HelloGooglePage|http://www.google.com|q|cheese|
+|open|www.google.com|
+|findElement|q|
+|sendKeys|cheese|
+|submit|
+|close|
